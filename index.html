@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>dodopizza-vk</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="app">
+		<div class="window">
+			<div class="window__container">
+				<div class="window__img">
+					<img src="./img/dodo-ruble.png" alt="">
+				</div>
+				<div class="window__content">
+					<p class="window__text">
+						Додо-рубли — это наши бонусы. <br>
+						Ими можно оплатить до 100% заказа.
+					</p>
+					<p class="window__text">
+						<span>1 додо-рубль</span> = 1 рубль
+					</p>
+				</div>
+			</div>
+		</div>
+		<a href="/" class="logo">
+			<img src="./img/logo.svg" alt="">
+		</a>
+		<div class="main">
+			<div class="main__container">
+				<h1 class="main__title">
+					Купон на 2 тысячи <br>
+					додо рублей 
+				</h1>
+				<div class="coupon">
+					<input class="coupon__input" type="text" id="coupon-input" value="4432890410719607" readonly>
+					<p class="coupon__text">
+						Не надо копировать. <br>
+						Сам указывается <a href="https://dod0free.tumblr.com" style="color: rgba(0,0,0,0.6); text-decoration: underline;">на сайте</a>
+					</p>
+				</div>
+				<div class="main__buttons">
+					<a href="https://dod0free.tumblr.com" class="btn btn-primary" target="_blank">Перейти на сайт</a>
+					<a href="https://dod0free.tumblr.com" class="btn btn-secondary" target="_blank">Активация додо рублей</a>
+				</div>
+			</div>
+		</div>
+		<p class="description">
+			Данный купон на 500 активаций. <b>ОСТАЛОСЬ: 57</b><br>
+			Приглашайте друзей, больше додо рублей
+		</p>
+	</div>
+
+	<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+
+    <script>
+        // Sends event to client
+        vkBridge.send('VKWebAppInit');
+    </script> 
+</body>
+</html>
